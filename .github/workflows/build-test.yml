@@ -15,4 +15,4 @@ jobs:
       - name: Build the Docker image
         run: docker build -t knowable/docker-react -f Dockerfile.dev .
       - name: Run tests
-        run: docker run knowable/docker-react npm run test -- --coverage
+        run: docker run knowable/docker-react npm run coverage
