@@ -25,9 +25,6 @@ jobs:
       - name: Build production Docker image
         run: docker build -t knowable/docker-react-prod .
 
-      - name: Build production react app
-        run: docker run knowable/docker-react-prod npm run build
-
       - name: Generate deployment package
         run: zip -r deploy.zip build
 
